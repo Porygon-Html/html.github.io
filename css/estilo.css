@@ -1,0 +1,64 @@
+
+#principal{
+    width: 1366px;
+    height: 1800px;
+    background-color: #AEDFF2;
+    margin: 0 auto;
+}
+
+
+.trispace{
+    font-family: "Trispace", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+#navegacion{
+    width: 1366px;
+    height: 100px;
+    background-color: #E8B6FF;
+}
+
+
+
+#contenido{
+    width: 1366px;
+    height: 2000px;
+    background-color: #AEDFF2;
+}
+#left{
+    width: 650px;
+    height: 1100px;
+    background-color: #B6CAFF;
+    float: left;
+    text-align: center;
+}
+
+#text{
+    font-family:"Trispace", sans-serif;
+    font-size: 35px;
+    
+
+}
+
+#right{
+    width: 650px;
+    height: 1100px;
+    background-color: #B6CAFF;
+    float: right;
+    text-align: center;
+}
+
+
+
+
+
+#pie{
+    width: 1366px;
+    height: 320px;
+    background-color: #A62B0F; 
+}
+

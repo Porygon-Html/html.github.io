@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+    <div id="Principal">
+        <div id="blank"></div>
+        <div id="encabezado">
+            <a href="parcial1.html"><img src="estilo/fotos/Design.jpg" alt="" id="enimg"></a>
+        </div>
+        <div class="navegacion">
+            <div class="navlist">
+            <li id="navb"><a href="Erik.html"><button class="colores" type="button">Erik Adigard</button></a></li>
+            <li id="navb"><a href="julie.html"><button class="colores" type="button">Julie Bargmann</button></a></li>
+            <li id="navb"><a href="miguel.html"><button class="colores" type="button">Michael Gabellini</button></a></li>
+            <li id="navb"><a href="rebe.html"><button class="colores" type="button">Rebeca Méndez</button></a></li>
+            </div>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div id="contenido">
+            <div id="fechas">
+                
+            </div>
+            <div id="p1">
+                <a href=" Erik.html"> <img src="estilo/fotos/erikgris.png" alt="" id="img1"></a>
+                <p id="texto1">Erik Adigard | M.A.D.
+                    Thursday, September 12
+                    6:00 pm</p>
+
+            </div>
+            <div id="p2">
+                <a href=""><img src="estilo/fotos/juliegris.png" alt="julie" id="img2"></a>
+                <p id="texto2">Julie Bargmann | D.I.R.T. Studio
+                    Tuesday, October 9
+                    7:30 pm  </p>
+
+            </div>
+            <div id="p3">
+                <a href="miguel.html"><img src="estilo/fotos/miguelgris.png" alt="miguel" id="img3"></a>
+                <p id="texto3">Michael Gabellini | Gabellini Associates
+                    Wednesday, November 2
+                    6:00 pm</p>
+
+            </div>
+            <div id="p4">
+                <a href="rebe.html"><img src="estilo/fotos/rebegris.png" alt="rebeca" id="img4"></a>
+                <p id="texto4">Rebeca Méndez | Méndez Communications
+                    Thursday, December 4 <br>
+                    6:30 pm</p>
+
+            </div>
+        </div>
+
+
+        <div id="pie">
+          <p id="pietxt">Join us Cooper-Hewit,National Design Museum 2 East 91st Street New York City</p>
+            
+        </div>
+        
+    </div>
+
+
+
+    <script>
+    const burger = document.querySelector(".burger");
+    const navlist = document.querySelector(".navlist");
+    
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navlist.classList.toggle("active");
+        
+    })
+
+    document.querySelectorAll(".colores").forEach(n => 
+        n.addEventListener("click", () => {
+            burger.classList.remove("active");
+            navlist.classList.remove("active");
+            
+        })
+    )
+
+    </script>
+</body>
+</html>
